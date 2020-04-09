@@ -1,6 +1,10 @@
 " Language: Mr Hashemi
 " URL: https://mr-hashemi.github.io/mr-hashemi/
 
+if exists("b:current_syntax")
+  finish
+endif
+
 " set keywords
 syn keyword hashemiKeywords bebin badi khob age bood na? ta bede
 
@@ -11,8 +15,10 @@ syn keyword hashemiBuiltin bekhoon bechap benevis jadid
 syn region hashemiString start=+"+ skip=+\\"+ end=+"+
 
 " set numbers
-syn match hashemiNumber "<\d+>"
-syn match hashemiNumber "<\d+\.\d+>"
+syn match hashemiNumber "\d\+"
+syn match hashemiNumber "[-+]\d\+"
+syn match hashemiNumber "\d\+\.\d*"
+syn match hashemiNumber "[-+]\d\+\.\d*"
 
 " set commenting system
 syn region hashemiComment start="/\*" end="\*/"
