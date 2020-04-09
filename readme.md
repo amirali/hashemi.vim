@@ -1,6 +1,6 @@
 # Mr-Hashemi syntax highlight for vim
 Screenshot example in dracula theme
-![screenshot](./screenshot.png)
+![screenshot](./screenshot.PNG)
 
 ## Installation
 
