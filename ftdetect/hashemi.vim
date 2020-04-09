@@ -1,1 +1,1 @@
-autocmd BufNewFile,BufRead *.hashem setfiletype MrHashemi
+autocmd BufNewFile,BufRead *.hashem setfiletype hashemi
